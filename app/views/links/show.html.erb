@@ -1,0 +1,11 @@
+<h1>Links#show</h1>
+<div>
+  <p>
+    <span>Shortener link</span>
+    <%= link_to code_url(@link.url_code), code_url(@link.url_code) %>
+  </p>
+  <p>
+    <span>Admin link</span>
+    <%= link_to admin_link_url(@link), admin_link_path(@link) %>
+  </p>
+</div>

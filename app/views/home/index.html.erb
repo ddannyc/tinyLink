@@ -1,0 +1,8 @@
+<h1>Home#index</h1>
+<%= form_tag(links_path) do -%>
+  <p>
+    <label for="url">Enter a long URL to make tiny:</label><br/>
+    <input id="url" name="url" type="text"/>
+    <%= submit_tag 'Submit' %>
+  </p>
+<% end -%>

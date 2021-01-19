@@ -1,0 +1,11 @@
+<h1>Links#show</h1>
+<div>
+  <p>Shortener link: <b><%= code_url(@link.url_code) %></b></p>
+  <p>Origin link: <b><%= Base64.urlsafe_decode64(@link.origin_url) %></b></p>
+  <p>Count: <b><%= @link.view_count %></b></p>
+  <p>
+    <%= form_tag(admin_link_path(@link), method: :put) do -%>
+      <%= submit_tag 'Expire' %>
+    <% end -%>
+  </p>
+</div>
